@@ -1,0 +1,57 @@
+operations of lists
+{
+	let list1 = [1,2,3,4,5]  and list2 = [ 'hello', 'good',93, 0.4]
+	concatnation list3 = list1 + list2       returns: [1,2,3,4,5,'hello','good',93,0.4]
+	len(list3) returns: 9
+	list1.append(6)      returns:    [1,2,3,4,5,6]         this changes the original list itself
+	list1.pop()          returns:    [1,2,3,4,5] 
+	list1.pop(3)         returns:    [1,2,3,5,6]           pops the element at 3rd index
+	list1.sort()    returns nothing but changes the original list by sorting it in increasing order
+	list4 = list1.sort()  is a wrong statement because sorted list replaces the original list only
+	list4 = list1   now here we can assign the list1 to list4
+	list1.reverse() reverses the original list1 and now after list1 is: [5,4,3,2,1]
+	list1[2] = 10   now list1 is:  [1,2,10,4,5]
+	list can also contain another list for ex: list1[1] = [2,9]         now list1 returns: [1,[2,9],3,4,5]
+	to grab 9 from the above list we have to use two sets of braces like list1[1][1] returns: 9
+	list1 = ['a','b','c'] the result of list1[1:] is: ['b','c']
+}
+
+type(<variable>) returns the type of the variable is
+
+
+dictonaries are like lists but they use key vaues to store data instead of index values. one disadvantage of dictionary is that we can't sort the elements of dictionary
+keys and values can be of any type( integer, string, list, dictonaries)   
+operations on dictionaries
+{
+	d = { 'k1':234, 343:[3,23,'aksdjf'], 'four':{ 343: '3kjasd'} }
+	d.keys() returns all the keys of the dictionary
+	d.values() returns all the values of the dictionary
+	d.items() returns all the items(keys and values) of the dictionary
+	d['k1'] returns 234
+	we can use multiple braces to get the values of the dictionaries inside of the dictionary
+	most of the methods applied on the dictionary is same as lists but using keys but instead of indices
+}
+
+
+tuples are very similar to lists but they follow immutability(cannot do item assignment in the original object) and they use parantheses instead of []
+{
+	there are only two methods(count and index) used to for tuples which are used to read the contents of the tuples but cannot write them because of immutability
+	let t = (1,2,2,3)
+	t.count(2) returns: 2            it is used to count the number of times 2 appears in the tuple
+	t.index(2) returns: 1            it returns the index of 2 which occurs for the first time
+	t[0] = 23  throws error          it is because tuples follow immutability
+}
+
+sets are just like what we study in maths. a unordered collection of objects of same type with every element object being unique(no repitition)
+{
+	to declare a variable as set we write a = set()
+	to add elements to it: a.add(1)     this adds 1 to the empty set
+	set([1,1,1,1,2,2,2,2,3,3,3,3])      returns {1,2,3}
+	set('parallel')                     returns {'p','a','r','l','e'}
+}
+
+boolean
+True and False here T and F are capital letters(case sensitive)
+
+
+	

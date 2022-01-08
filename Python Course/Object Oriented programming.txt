@@ -1,0 +1,22 @@
+Object oriented progaramming where we can create objects which have their own methods and member variables
+class is a blueprint of a object created from it, means than an object of the class will have its own copy of methods and variables defined inside the class 
+which determines the structure of the object
+
+for example:
+	class is like an species like human and eklavya is an object of it 
+	here a human has some properties like name, address, gender etc      and also perform some functions(for objects we call methods) like walking, speaking, studying
+	so when we create an object of an predefined in python we have to pass the proteries of the object to get it created 
+	
+	
+definition of class starts with keyword 'class' and and then name of class that starts with capital letter then ():
+__init__(self,parameters)           here __init__ function is used to construct the object with it instance variables
+the values of the variables initialized before this function is same for every object of the class
+
+a function inside a class is called method	 
+
+
+when we call a method using an object, then we can use its variables in the method using keyword 'self' for example: self.a       refer to the member variable a of the calling object
+
+
+one thing to note a method or function can have default values for its parameters which can be used when method do not receive any values on calling, if method or function is passed 
+some values then the default values are overwritten by the passed values

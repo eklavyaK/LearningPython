@@ -1,0 +1,25 @@
+Data Types
+{
+	type(syntax)		representation
+	
+	intgers(int) 		343, 349
+	float(float)        234.23, 2902.0
+	string(str)			'hello', "how"    
+	lists(list)			ordered sequence of objects ex: [ "akljkhkj", 230, 'hello']
+	dictionaries(dict)	Unordered Key: Value pairs: { "mykey":"value", "name":"eklavya"}
+	tuples(tup)         Ordered immutable sequence of objects: ("akljkhkj", 230, 'hello')
+	sets(set)			Unordered collection of unique objects: {"a","b"}
+	boolean(bool)		logical value indicating true or false
+}
+
+
+
+exponential operator(**)	2**3 = 8
+
+in python we can assign same variable name multiple times in the same program to assign values of different data types but after.  the current value stored in the variable is determined by its latest
+value assignment to it
+
+actually string is given inside single or double quotes because in case if string itself contains single or double quotes inside then the string should be given inside double or single quotes respectively
+
+escape sequence		\n  	when compiler reads this command then it just brings the cursor to next line. everything after that in quotes is printed on the next line
+escape sequence    	\t 		when compiler reads this command then it just takes the cursor to 7 spaces right which is generally referred as tab

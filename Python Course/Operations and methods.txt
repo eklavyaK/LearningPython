@@ -1,0 +1,73 @@
+boolean and their combinations
+{
+	1==2 and 3==3             returns: Flase
+	1==2 or 3==3              returns: True
+	not 1==2                  returns: True
+}
+
+if and else statements do not use braces they are applied using identation. and at the end of every condition colon ':' is given at the end of the conditions in if, elif and else statement line.
+elif statements are same as else if statements of java. we can use as many elif statements as we want with else statement should be at last. statements under the first true condition are excuted
+otherwise else is excuted.
+
+
+in python for loop is run using list, tuple, dictionary. indentation is very important and 'in' keyword is used with colons at last. the loop is run for every element in the list, tuple, dictionary
+in case of dictionary of dictionary we have to use functions such .items, .keys, .values to mention what we are using to iterate through the dictionary
+
+
+python doesn't support statements like K++ for increment or decrement. but it supports k += 1 for increment or decrement 
+
+
+while loop is just like java with syntax:
+	while <condition>:
+		<statement to be executed>
+we can also use else block next while block which gets once while condition gets false
+
+
+break statement breaks out of the current loop.
+continue statement again continues the loop after being executed
+pass statement does nothing at all. but can be useful if we don't want to keep nothing inside the loop, here we just want to execute the loop with no statements, because loop without any statement to excute
+will throw an error
+
+
+range(x) function generates integers from 0 to just less than x 
+range(2,x) function generates integers  from 2 to just less than x 
+range(2,x,3) function generates A.P. from 2 to just less than x with common difference 3
+for ex: list(range(2,10,2))      returns: [2,4,6,8]
+
+
+enumerate('education')   function generates list of tuples where each tuple is (<index number>,'<character>')   like: [(0,'e'),(1,'d'),(2,'u'),(3,'c'),(4,'a'),(5,'t'),(6,'i'),(7,'o'),(8,'n')]
+
+
+zip(list1,list2,list3...) is used to conbine the list elements in order to form a list of tuples like each tuple contains a element from each list, therefore the length is decided by the length of the 
+shortest list
+
+
+'in' keyword is used to check whether the element is in a particular string,list,tuple,dictionary
+max(list1), min(list1) is used to get the maximum and minimum element of the list respectively
+
+
+'import' keyword is used to get a function form a library and 'from' keyboard is used to call the library
+for example: from random import shuffle          this gets function shuffle from import 
+shuffle(list1)                                   this shuffles the original list
+from random import randint                       this generates random integer between a given range
+randint(2,199)                                   this generates random integer between a 2 and 199
+
+
+a = input('enter something')
+this function asks some input from the users at run time with message: enter something:           the input is stored in variable a as string type
+
+
+typecasting in python:
+a  =  10.3
+int(a)        returns: 10
+string(a)     returns: '10.3'
+
+
+List comprehension in python
+{
+	we can use loops or conditional statements to add elements to the list
+	for example: a = 'asdfljkasdfl'
+	             list1 = [ x for x in a]            here the variable x which is appears first in the bracket makes the list. syntax is <variable> = [ <variable> <loop or conditions>]
+				 
+				 the above program returns [a,s,d,f,l,j,k,a,s,d,f,l]
+}

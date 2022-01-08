@@ -1,0 +1,9 @@
+Command Line Basics
+{	
+	'cd <directory name>' to move to a successive directory
+	'cd..' to move to a preceding directory
+	'dir' to display the contents of the current folder
+	'cd <write a letter or word to get names of folders starting with them after you press tab>'
+	'cls' to clear the entire screen
+}
+

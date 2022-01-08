@@ -1,0 +1,16 @@
+Bro, the file which I sent you is a python file, you can run it on your pc only if your pc has python installed in it.
+
+let me show how to run the program
+first of all let me show the program. 
+
+you can run this code either using command prompt or python idle.
+
+let me run it and show you
+
+you can learn to install python from here: https://www.youtube.com/watch?v=UvcQlPZ8ecA
+
+if you don't want to install python then you can run the code in any online python compiler: https://www.onlinegdb.com/online_python_compiler
+
+first open notepad, if you have notepad++ then open that it will be best
+
+copy the code and paste in online compiler. now click on run to run it. this is how you can run it online.

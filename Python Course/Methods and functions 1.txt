@@ -1,0 +1,80 @@
+'def' keyword is used to initialize a function syntax: def <function with underscores if required>(parameters):
+                                                       ```
+                                                       Docstring ( explain what the function is about to the reader)
+													   
+													   ```
+in python functions are almost same as java like we use to return,to calculate or to perform any kind of function
+
+while assigning a tuple to a variable we can assign the each element to a different variable like: a,b = (1,2)        returns a = 1, b = 2
+
+sum(a,b,c) is used to add numbers a,b,c 
+
+if a function already has parameters values assigned then we can overwrite those values when function is called
+for example:
+{
+    def fun(a, b, c, d=5, e=6):
+		return sum(a,b,c,d,e)
+	fun(3,2,5)                      returns: 21
+	fun(3,2,5,4)                    returns: 20             here d is overwritten 
+	fun(3,2,5,4,9,10)               throws exception becasuse of more arguments passed than to be accepted
+}
+
+application of '*' and '**' in parameters
+{ 
+	def fun(*a):                                    this can accept any number of arguments and store them in a tuple with variable name a
+		print(a[0])
+	def fun2(**b):                                  this can accept any number of arguments and store them in a dictionary with variable name b
+		print(b.keys())
+	def fun3(*c,**d):                               here we have to note that the values passed to c and d should be in order and not shuffled (like values of c should be passed first)
+		print(c[0])
+		print(d.value())
+	fun(343,43,343,24,3)
+	fun1('money' = 'greed', 'dad' = 'father', me = 'visionary')
+	fun3(343,43,343,24,3,'money' = 'greed', 'dad' = 'father', me = 'visionary')
+}
+
+
+map() function can be used to feed multiple values to a function
+for example
+{
+	def fun(num):
+		return (num**2)
+	list1 = [1,2,3,4,5]
+	for item in map(fun,list1):	                           
+		print(item)		                            prints the squares of each element of the list
+	list(map(fun,list1))                            returns the list of the squares
+}
+
+
+filter() and map functions work in similar manner. the difference is that filter feeds the function the elements of the list and if functions returns true 
+it adds it in a list which is returned when we use the filter function. the function on which filter function is applied should return either true or false
+
+
+lambda expressions
+the syntax is:    lambda <variable passed to the lambda expression>:<lambda expression> 
+{
+	list1 = [1,2,3,4,5]
+	list(map(lambda x: x*3, list1))                                    returns a list:   [3,6,9,12,15]
+}
+
+
+scope of a variable
+{ 
+	when a variable is used in a function it first whether it's value is already present in it then it goes to next level to know it's value 
+	for example: x = 4
+				 def fun(x)
+					x = 20 
+					print(x)             this prints 20(here when compiler reads x it tries to find value of x in the local level which is inside function)            
+				 fun(x)
+				 print(x) 				 this prints 4 (here when compiler reads x it tries to find value of x in the global level)  
+
+	global keyword is used to modify the global variable in a function
+	for example:
+				 x = 4
+				 def fun()
+					global x             this directly gives the permission to change the global variable             
+                    x= 3          		 this changes the value of the global variable to 3	 		  
+					print(x)             this prints 3         
+				 fun()  
+				 print(x) 				 this also prints 3 (because value of global variable has changed initially) 
+}

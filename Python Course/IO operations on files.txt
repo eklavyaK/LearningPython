@@ -1,0 +1,35 @@
+'pwd' command is used to know the file location.
+
+Reading and writing files
+{
+    to open a file just open it in a variable:   f = open('testfile.txt','w')    
+	
+	r	 for reading – The file pointer is placed at the beginning of the file. This is the default mode.
+	r+	 Opens a file for both reading and writing. The file pointer will be at the beginning of the file.
+	w 	 Opens a file for writing only. Overwrites the file if the file exists. If the file does not exist, creates a new file for writing.
+	w+   Opens a file for both writing and reading. Overwrites the existing file if the file exists. If the file does not exist, it creates a new file for reading and writing.
+	rb   Opens a file for reading only in binary format. The file pointer is placed at the beginning of the file.
+	rb+	 Opens a file for both reading and writing in binary format.
+	wb+  Opens a file for both writing and reading in binary format. Overwrites the existing file if the file exists. If the file does not exist, it creates a new file for reading and writing.
+	a    Opens a file for appending. The file pointer is at the end of the file if the file exists. That is, the file is in the append mode. If the file does not exist, it creates a new file for writing.
+	ab   Opens a file for appending in binary format. The file pointer is at the end of the file if the file exists. That is, the file is in the append mode. If the file does not exist, it creates a new file for writing.
+	a+   Opens a file for both appending and reading. The file pointer is at the end of the file if the file exists. The file opens in the append mode. If the file does not exist, it creates a new file for reading and writing.
+	ab+  Opens a file for both appending and reading in binary format. The file pointer is at the end of the file if the file exists. The file opens in the append mode. If the file does not exist, it creates a new file for reading and writing.
+	x    open for exclusive creation, failing if the file already exists (Python 3)
+
+	
+	to the write the file we do: f.write('my name is eklavya')       this will write the file with the given string
+	to change the lines we do:   f.write('my name is eklavya\nI am from Bihar')   this will print the statement "I am from Bihar" in the next line
+	in case of reading:   f1 = f.read()    print(f1)              this prints the text in f1
+	now again we write:	  f2 = f.read()    print(f2)              this prints nothing because the cursor has been shifted to the end of the text during reading the file in f1
+	to get the cursor back to the initial position we do:     f.seek(0)          this is done for the cursor to reach the index 0
+	
+	f.readlines() stores each line in form of list for ex:    f1 = f.readlines()   print(f1)           this prints  ['my name is eklavya','I am from Bihar']
+	
+	Opening the file using 'with' command. Using this we can open multiple files with commas in between for ex:  with open('sdklfj.txt', 'r') as f1, open('lkjdf.txt','w') as f2:      this statement opens
+	two files in f1 and f2 variables(note that at last colon is necessary to close the with statement)
+	
+	we can also open files using its location if it is present in different directory but the location of the path should be given using double slash \\ for example:
+	f = open('C:\\Users\\MY PC\\OneDrive\\Desktop\\Python Course\\New text document.txt','w+')
+	this can create new file in the location if it is for writing permission but will throw in case of reading permission
+}

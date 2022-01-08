@@ -1,0 +1,62 @@
+len("Hello")        prints the length of the string in this case it is 5
+
+lines that start with hashtags(#) indicate comments
+
+string slicing is extracting a chunk of string from a string for ex: 'education'[3:6]        gives output as:       'cat'        (here 3 indext position of the first character and 6-1 is the index position
+of the last character of the string)
+
+string indexing is extracting character at the particular position of the string for ex: 'education'[5]           returns:    't'         (here 5 is the index of the character)
+
+immutability(can't use indexing to change the original string) for example x='Hello World' 
+{
+	now x[0] = 'Y'	 now this will give a error because we can't replace the original string like this
+}
+
+indexing rule:                   HELLO:               H   E   L   L   O
+                                                      0   1   2   3   4
+													  0  -4  -3  -2  -1
+
+some concepts
+{
+	strings are objects
+	
+	if you want to get all the string starting from a particular index then we use          <starting index>:
+	for example:           'education'[2:]         returns:  'ucation'
+	
+	if you want to concatenate a string with another then it can be done using plus sign for example: "hello" + "world"           returns:     "hello world"
+}
+
+some useful functions of string
+{
+	* sign is used to add the same letter to form a string for ex:  'z'*10            returns:      'zzzzzzzzzz'
+	
+	for next examples let's use x = 'Hello World'
+	x.upper()    returns:   'HELLO WORLD'         it doesn't affect the original string but if we write x = x.upper() can change the x
+	x.lower()    returns: 	'hello world'        
+	x.split()  	 returns:  	['Hello', 'World']    it creates a list of the words by default it uses space a its split tool
+	x.split('l') 	 returns:  	['He', '', 'o Wor', 'd']
+	t = x.replace('Hello','Hellow')               it returns the value of t as 'Hellow World'  
+}
+ 
+.format method(print formatting)
+{
+	this method is used to insert a string in place of {} for example: 				'my name is {} {} {}'.format('eklavya','kumar','singh')            returns: 'my name is eklavya kumar singh'
+	the strings inside used inside the method have their own indices:               'my name is {1} {0} {2}'.format('eklavya','kumar','singh')		   returns: 'my name is kumar eklavya singh'
+	in the previous example the strings have the indices as 0,1,2 in order if we don't use the indices the strings just replace the curly braces in order in which they are given in .format method
+	we can also store the strings inside variables for example:                     'my name is {b} {c} {a}'.format(a='eklavya',b='kumar',c='singh')	returns: 'my name is kumar singh eklavya'	
+	now if a variable a stores a value like a = 134.32849237 but we want to print only to a few decimal places then:   print('the value of a is {k: 5.3f}   returns:  the value of a is 134.328
+	here in the above example 3 is the no of decimal places in the number to be printed and 5 is actually of no use here but if we give a number more than the number characters in the number after 
+	rounding off then it includes some whitespace to make the length of the string equal to it. for example if we give 10 instead of 5 then return:                   the value of a is    134.328
+	here it includes 3 spaces before the number so that its total length becomes 10
+}
+
+string literal method(print formatting)
+{
+	here we inject string inside a string by using f keyword like if a='my' and b= 'eklavya'  then:     print(f'{a} name is {}')            returns: my name is eklavya
+}
+
+for other types of formatting methods refer to site: https://pyformat.info/
+
+
+	
+
